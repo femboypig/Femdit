@@ -1,0 +1,209 @@
+/* Основные стили остаются как есть */
+
+body {
+  background: linear-gradient(135deg, #ffccf9, #ff9fea);
+  font-family: 'Comic Sans MS', cursive;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#postContent {
+  width: 97.5%;
+  height: 60px;
+  margin-bottom: 10px;
+  border: 1px solid #ff69b4;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff85c1;
+}
+
+.post {
+  border: 2px solid #ff9fea;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post .author {
+  font-weight: bold;
+  color: #ff69b4;
+  font-size: 1.2em;
+}
+
+.post .content {
+  margin-top: 8px;
+  font-size: 1.1em;
+  color: #4a4a4a;
+}
+
+.comment-section {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.comment {
+  border-top: 1px solid #ff69b4;
+  padding: 8px 0;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+.like-dislike-buttons {
+  margin-top: 10px;
+}
+
+.like-dislike-buttons button {
+  margin-right: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.like-dislike-buttons button.liked,
+.like-dislike-buttons button.disliked {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#comments {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ff69b4;
+  border-radius: 8px;
+}
+
+.comment-input button {
+  padding: 8px 12px;
+}
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1em;
+  float: right;
+}
+
+.delete-button-small {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+/* Адаптивный дизайн для экранов меньше 600px */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  #postContent {
+      height: 60px;
+      width: 95%;
+      font-size: 0.9em;
+  }
+
+  .post {
+      padding: 10px;
+  }
+
+  .post .author {
+      font-size: 1em;
+  }
+
+  .post .content {
+      font-size: 1em;
+  }
+
+  .comment-section {
+      margin-top: 10px;
+      padding-left: 10px;
+  }
+
+  .comment {
+      font-size: 0.85em;
+  }
+
+  .like-dislike-buttons {
+      margin-top: 8px;
+  }
+
+  .like-dislike-buttons button {
+      font-size: 0.9em;
+      padding: 8px;
+  }
+
+  .comment-input {
+      flex-direction: column;
+  }
+
+  .comment-input input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 8px;
+  }
+
+  button {
+      font-size: 0.9em;
+      padding: 8px 10px;
+  }
+}
